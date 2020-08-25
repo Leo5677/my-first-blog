@@ -1,19 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt">
 <head>
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <title>Blog Django</title>
 </head>
-<body>
 <div>
-    <h1><a href="/">Blog Django</a></h1>
+    <h1><a href="/">Django Blog</a></h1>
 </div>
+
 {% for post in posts %}
     <div>
         <p>published: {{ post.published_date }}</p>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
-{% endfor %} 
-</body>
-</html>
+{% endfor %}
